@@ -4,6 +4,7 @@ body {
 
 #circle {
 	color: white;
+	font-size: 2rem;
 	font-weight: bold;
 	background: #58d68d;
 	width: 400px;
@@ -13,4 +14,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	box-shadow: 0 0 30px #ccc;
+}
+
+#circle span {
+	-webkit-text-stroke: 0.0625rem rgba(0, 0, 0, 0.8);
 }
