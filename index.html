@@ -14,10 +14,24 @@
 	<body>
 		<div class="container">
 			<h1 class="title mt-5 has-text-centered">
-				Color Picker and Binary Converter
+				Color Finder and Binary Converter
 			</h1>
 
-			<section>
+			<nav class="level">
+				<p class="level-item has-text-centered">
+					<button class="button is-info" id="color-display-button">
+						Color Finder
+					</button>
+				</p>
+
+				<p class="level-item has-text-centered">
+					<button class="button is-info" id="binary-display-button">
+						Binary Converter
+					</button>
+				</p>
+			</nav>
+
+			<section id="color-finder">
 				<div id="circle" class="mx-auto my-3"><span>#58D68D</span></div>
 				<div class="columns is-desktop">
 					<div class="column is-half mx-auto my-6 box">
@@ -30,7 +44,7 @@
 									<input
 										id="hex-input"
 										type="text"
-										class="input"
+										class="input is-rounded"
 										placeholder="Enter a hex code..."
 									/>
 								</div>
@@ -38,7 +52,7 @@
 							<div class="field is-grouped is-grouped-centered">
 								<div class="control">
 									<button
-										class="button is-primary"
+										class="button is-primary is-rounded"
 										type="submit"
 									>
 										Change color!
@@ -46,6 +60,49 @@
 								</div>
 							</div>
 						</form>
+					</div>
+				</div>
+			</section>
+
+			<section id="binary-converter">
+				<div class="columns is-desktop">
+					<div class="column is-half mx-auto my-3">
+						<form action="" id="binary-form">
+							<div class="field">
+								<label for="binary-input" class="label"
+									>Base 10 Number:</label
+								>
+								<div class="control">
+									<input
+										id="binary-input"
+										type="number"
+										class="input is-rounded"
+										placeholder="Enter a number in base 10..."
+									/>
+								</div>
+							</div>
+							<div class="field is-grouped is-grouped-centered">
+								<div class="control">
+									<button
+										class="button is-primary is-rounded"
+										type="submit"
+									>
+										Convert to binary!
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="column is-half mx-auto my-3">
+						<div class="window">
+							<div class="terminal">
+								<p class="log">
+									Converting
+									<span id="decimal-span"></span> to binary...
+								</p>
+								<p class="log" id="result"></p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
