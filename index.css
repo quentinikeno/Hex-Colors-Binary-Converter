@@ -20,6 +20,10 @@ body {
 	-webkit-text-stroke: 0.0625rem rgba(0, 0, 0, 0.8);
 }
 
+#binary-converter {
+	display: none;
+}
+
 .window {
 	border-radius: 3px;
 	background: #222;
