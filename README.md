@@ -1,6 +1,6 @@
 # Color Finder and Binary Converter
 
-This is a quick way to both visualize hex colors and convert decimal numbers to binary. This is for use in a school presentation.
+This is for use as a demonstration as part of a presentation.  A quick way to both visualize hex colors and convert decimal numbers to binary.
 
 ## Installation
 
@@ -17,6 +17,11 @@ Start in your local browser using npm and lite-server:
 ```
 npm start
 ```
+
+## Deployed Site
+[Link to site.](https://quentinikeno.github.io/Hex-Colors-Binary-Converter/)
+
+Deployed with Github Pages.
 
 ## Author
 
